@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 .center{
@@ -30,7 +30,7 @@ body{
 
 section{
     margin-top: 2em;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .inside{
