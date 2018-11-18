@@ -1,13 +1,19 @@
 body{
     overflow-x: hidden;
     box-sizing: border-box;
+    background-color: lightgray;
 }
 .center{
     text-align: center;
 }
 
-.border{
+.border4{
     border: 1px black solid;
+}
+
+
+header{
+    background-color: white;
 }
 
 .name{
@@ -35,6 +41,8 @@ section{
 
 .inside{
     padding: 20px;
+    margin-top: 2em;
+    background-color: white;
 }
 
 .sectionTop{
@@ -45,11 +53,38 @@ section{
     margin-top: 10px;
 }
 
-.box{
-    height: 10px;
+.line{
+    height: 5px;
     background: linear-gradient(90deg, navy, deepskyblue);
 }
 
 .sectionTitle{
     border-bottom: black 1px solid;
+}
+
+.box{
+    height: 125px;
+    position: relative;
+    width: 175px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.sep{
+    margin-bottom: 10px;
+}
+
+
+.push{
+    margin-bottom: 60px;
+}
+
+.portTitle{
+    position: absolute;
+    background-color: deepskyblue;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
 }
