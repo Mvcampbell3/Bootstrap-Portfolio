@@ -25,7 +25,14 @@ body{
 
 section{
     margin-top: 2em;
-    margin-bottom: 100px;
+}
+
+#footer{
+    height: 56px;
+}
+
+.wrapper{
+    min-height: calc(100vh - 56px);
 }
 
 .inside{
