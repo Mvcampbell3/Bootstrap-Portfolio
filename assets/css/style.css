@@ -9,9 +9,17 @@ h1, h2, h3, h4, h5, h6, ul, p{
     margin: 0;
 }
 
+.navbar-custom{
+    background-color: #fff;
+}
+
 .list-style{
     list-style: none;
     margin: 20px 0;
+}
+
+.stop{
+    min-height: 482.4px;
 }
 
 .center{
@@ -24,10 +32,14 @@ h1, h2, h3, h4, h5, h6, ul, p{
 }
 
 #name{
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Rubik', sans-serif;
+    /* color: white; */
     color: white;
-    font-size: 30px;
+    font-size: 36px;
 }
+
+
 
 .space{
     margin: 1em 0;
@@ -37,8 +49,15 @@ h1, h2, h3, h4, h5, h6, ul, p{
     margin-top: 1em;
 }
 
+.border3{
+    border: 1px black solid;
+    box-shadow: 15px 7px 50px black;
+}
+
 .border4{
     border: 1px black solid;
+    box-shadow: 7px 7px 10px black;
+
 }
 
 .answer{
@@ -54,7 +73,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
 }
 
 .inside{
-    padding: 20px;
+    padding: 10px;
     background-color: white;
 }
 
@@ -124,4 +143,12 @@ img{
 
 #box5{
     background-image: url("../images/portPics/yahtzee.jpg");
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #name{
+        font-size: 20px;
+    }
 }
