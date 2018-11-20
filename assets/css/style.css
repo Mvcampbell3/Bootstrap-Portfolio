@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6, ul, p{
 }
 
 .space{
+    margin: 1em 0;
+}
+
+.space-top{
     margin-top: 1em;
 }
 
