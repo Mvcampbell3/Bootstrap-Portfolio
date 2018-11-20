@@ -4,7 +4,22 @@ body{
     background-color: lightgray;
 }
 
+h1, h2, h3, h4, h5, h6, ul, p{
+    padding: 0;
+    margin: 0;
+}
+
+.list-style{
+    list-style: none;
+    margin: 20px 0;
+}
+
 .center{
+    text-align: center;
+}
+
+.card{
+    margin: 30px auto 0 auto;
     text-align: center;
 }
 
@@ -14,17 +29,16 @@ body{
     font-size: 30px;
 }
 
-#navMike{
-    margin: 0;
-    padding: 0;
-}
-
 .space{
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
-section{
-    margin-top: 2em;
+.border4{
+    border: 1px black solid;
+}
+
+.answer{
+    margin-left: 15px;
 }
 
 #footer{
@@ -37,12 +51,7 @@ section{
 
 .inside{
     padding: 20px;
-    margin-top: 10px;
     background-color: white;
-}
-
-.sectionTop{
-    border-bottom: 3px red solid;
 }
 
 .sectionMid{
@@ -66,6 +75,11 @@ section{
     background-color: black;
 }
 
+img{
+    display: block;
+    margin: auto;
+}
+
 .sep{
     margin-bottom: 10px;
 }
@@ -85,6 +99,25 @@ section{
     padding: 5px 0;
 }
 
-.space{
-    height: 100px;
+
+/* Portfolio Page */
+
+#box1{
+    background-image: url("../images/portPics/boardGame.jpeg");
+}
+
+#box2{
+    background-image: url("../images/portPics/retroGame.jpeg");
+}
+
+#box3{
+    background-image: url("../images/portPics/keyboard.jpeg");
+}
+
+#box4{
+    background-image: url("../images/portPics/math.jpeg");
+}
+
+#box5{
+    background-image: url("../images/portPics/yahtzee.jpg");
 }
