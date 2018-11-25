@@ -1,6 +1,9 @@
 $("#box1").click(function() {
     console.log("clicked");
     $("#box1").slideUp("slow");
+    setTimeout(function(){
+        window.location.href = "ToDoList/todo.html";
+    }, 500);
 });
 
 $("#box2").click(function() {
