@@ -1,7 +1,9 @@
 body{
     overflow-x: hidden;
     box-sizing: border-box;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    /* background-image: url(../images/footer_lodyas.png); */
+    background-image: url(../images/old_moon/old_moon.png);
 }
 
 h1, h2, h3, h4, h5, h6, ul, p{
@@ -61,7 +63,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
 
 .border3{
     border: 1px black solid;
-    box-shadow: 15px 7px 50px black;
+    /* box-shadow: 15px 7px 50px black; */
 }
 
 .border4{
