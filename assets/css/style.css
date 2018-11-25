@@ -126,7 +126,7 @@ img{
 
 .portTitle{
     position: absolute;
-    background-color: deepskyblue;
+    background-color: #4aaaa5;
     bottom: 10px;
     width: 100%;
     text-align: center;
@@ -138,7 +138,7 @@ img{
 /* Portfolio Page */
 
 #box1{
-    background-image: url("../images/portPics/todoList.jpeg");
+    background-image: url("../images/portPics/boardGame.jpeg");
 }
 
 #box2{
