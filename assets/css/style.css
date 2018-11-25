@@ -39,6 +39,16 @@ h1, h2, h3, h4, h5, h6, ul, p{
     font-size: 36px;
 }
 
+.around{
+    height: 100%;
+    background-color: #4aaaa5;
+    padding: 4px 8px;
+}
+
+.navbar{
+    padding: 0;
+}
+
 
 
 .space{
