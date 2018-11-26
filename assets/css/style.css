@@ -6,6 +6,11 @@ body{
     background-image: url(../images/old_moon/old_moon.png);
 }
 
+.wrapper{
+    height: calc(100vh - 56px);
+}
+
+
 h1, h2, h3, h4, h5, h6, ul, p{
     padding: 0;
     margin: 0;
@@ -80,9 +85,6 @@ h1, h2, h3, h4, h5, h6, ul, p{
     height: 56px;
 }
 
-.wrapper{
-    min-height: calc(100vh - 56px);
-}
 
 .inside{
     padding: 10px;

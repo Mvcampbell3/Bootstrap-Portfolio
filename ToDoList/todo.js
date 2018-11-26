@@ -62,7 +62,7 @@ function getTask(){
             output.innerHTML += '<div class="task">'+
                                 '<h3 class="taskTitle">'+name+'</h3>'+
                                 '<p class="taskInfo">'+info+'</p>'+
-                                '<button class="btnDel" onclick="deleteTask(\''+name+'\')">X</button>'
+                                '<div class="btnDel" onclick="deleteTask(\''+name+'\')">&times;</div>'
                                 '</div>'
         }
 }
