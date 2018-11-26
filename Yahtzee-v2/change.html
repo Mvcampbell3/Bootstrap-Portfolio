@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Updated Yahtzee</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="black-out"></div>
+    <div class="pop-up" id="pop-up">
+        <div class="inside-pop">
+            <div class="top-pop">
+                <h2 class="popTitle">Rules of the Game</h2>
+            </div>
+            <div class="disclaim-pop">
+                <p class="disclaimer">**Disclaimer** <br>This is not for commercial use. This is a project used for
+                    educational purposes.</p>
+            </div>
+            <hr>
+            <div class="middle-pop">
+                <p class="rules">This is the game of Yahtzee. You have three rolls per turn. You have to fill out
+                    one
+                    of the score types each turn.
+                    If you do not get enough of the correct die to make a score, you must put a zero in one of the
+                    score types. The game is finished once you have
+                    filled out all of the scores. The scores for the upper section are made up of just the number
+                    that
+                    fit that type. If you have three ones and two sixes and you are filling out the ones type, your
+                    score there is 3, not 15. The lower portion of the scoresheet is filled as follows:
+                </p>
+                <ul class="lowerRules">
+                    <li>3 of a kind: score is total of all dice</li>
+                    <li>4 of a kind: score is total of all dice</li>
+                    <li>Full House: score is the toal of all dice</li>
+                    <li>Small Straight: 30pts</li>
+                    <li>Large Straight: 40pts</li>
+                    <li>Yahtzee: 50pts</li>
+                    <li>Chance: score is the total of all dice</li>
+                </ul>
+            </div>
+            <div class="lower-pop">
+                <div class="close-pop">Close</div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="title"><span id="mainTitle">Yahtzee</span></h1>
+    </header>
+    
+    <div class="rules-open">Rules</div>
+
+    <div class="flex mainBody">
+
+        <div class="rest">
+
+            <div class="flex">
+                <img id="die1" class="die" src="assets/images/Blankdie.jpg">
+                <img id="die2" class="die" src="assets/images/Blankdie.jpg">
+                <img id="die3" class="die" src="assets/images/Blankdie.jpg">
+                <img id="die4" class="die" src="assets/images/Blankdie.jpg">
+                <img id="die5" class="die" src="assets/images/Blankdie.jpg">
+            </div>
+
+            <div class="flex">
+                <div id="holdBtn1" class="box">Hold</div>
+                <div id="holdBtn2" class="box">Hold</div>
+                <div id="holdBtn3" class="box">Hold</div>
+                <div id="holdBtn4" class="box">Hold</div>
+                <div id="holdBtn5" class="box">Hold</div>
+            </div>
+
+
+            <div class="flex flex-con">
+                <button id="rollBtn" class="btn" onclick="rollAll()">Roll</button>
+                <button id="clrBtn" class="btn" onclick="clearAll()">
+                    <p>Clear</p>
+                </button>
+            </div>
+
+            <h3 id="rollCounter" class="rollcountbox">3 Rolls Left!</h3>
+
+            <div class="scoreBox">
+                <h3 class="totalScore" id="total1">Player 1 Total Score is: 0</h3>
+                <h3 class="totalScore" id="total2">Player 2 Total Score is: 0</h3>
+            </div>
+        </div>
+        
+        <div class="newForm">
+            <div class="topSection">
+                <div id="player1Tab" class="tab-active">Player 1</div>
+                <div id="player2Tab" class="tab">Player 2</div>
+            </div>
+            <div class="mainSection">
+                <div id="player1Form" class="playerForm">
+                    <div class="form">
+                        <div class="row">
+                            <div class="formTitle">
+                                <h3>Player 1 Scoresheet</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Upper Type</div>
+                            <div class="formBox">Score</div>
+                            <div class="formBox">Lower Type</div>
+                            <div class="formBox">Score</div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Ones</div>
+                            <div class="formBox"><input type="text" name="" id="ones"></div>
+                            <div class="formBox">3 of a kind</div>
+                            <div class="formBox"><input type="text" name="" id="threeOf"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Twos</div>
+                            <div class="formBox"><input type="text" name="" id="twos"></div>
+                            <div class="formBox">4 of a kind</div>
+                            <div class="formBox"><input type="text" name="" id="fourOf"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Threes</div>
+                            <div class="formBox"><input type="text" name="" id="threes"></div>
+                            <div class="formBox">Full House</div>
+                            <div class="formBox"><input type="text" name="" id="fullHouse"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Fours</div>
+                            <div class="formBox"><input type="text" name="" id="fours"></div>
+                            <div class="formBox">Sm. Straight</div>
+                            <div class="formBox"><input type="text" name="" id="smStraight"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Fives</div>
+                            <div class="formBox"><input type="text" name="" id="fives"></div>
+                            <div class="formBox">Lg. Straight</div>
+                            <div class="formBox"><input type="text" name="" id="lgStraight"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Sixes</div>
+                            <div class="formBox"><input type="text" name="" id="sixes"></div>
+                            <div class="formBox">Yahtzee</div>
+                            <div class="formBox"><input type="text" name="" id="yahtzee"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Upper Sub Total</div>
+                            <div class="formBox">
+                                <div class="outBox" id="subTotal"></div>
+                            </div>
+                            <div class="formBox">Chance</div>
+                            <div class="formBox"><input type="text" name="" id="chance"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Bonus</div>
+                            <div class="formBox">
+                                <div class="outBox" id="bonus"></div>
+                            </div>
+                            <div class="formBox">Bonus Yahtzee</div>
+                            <div class="formBox"><input type="text" name="" id="bonusYZ"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Upper Total</div>
+                            <div class="formBox">
+                                <div class="outBox" id="upperTotal"></div>
+                            </div>
+                            <div class="formBox">Lower Toal</div>
+                            <div class="formBox">
+                                <div class="outBox" id="lowerTotal"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="player2Form" class="playerForm gone">
+                    <div class="form">
+                        <div class="row">
+                            <div class="formTitle">
+                                <h3>Player 2 Scoresheet</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Upper Type</div>
+                            <div class="formBox">Score</div>
+                            <div class="formBox">Lower Type</div>
+                            <div class="formBox">Score</div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Ones</div>
+                            <div class="formBox"><input type="text" name="" id="ones2"></div>
+                            <div class="formBox">3 of a kind</div>
+                            <div class="formBox"><input type="text" name="" id="threeOf2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Twos</div>
+                            <div class="formBox"><input type="text" name="" id="twos2"></div>
+                            <div class="formBox">4 of a kind</div>
+                            <div class="formBox"><input type="text" name="" id="fourOf2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Threes</div>
+                            <div class="formBox"><input type="text" name="" id="threes2"></div>
+                            <div class="formBox">Full House</div>
+                            <div class="formBox"><input type="text" name="" id="fullHouse2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Fours</div>
+                            <div class="formBox"><input type="text" name="" id="fours2"></div>
+                            <div class="formBox">Sm. Straight</div>
+                            <div class="formBox"><input type="text" name="" id="smStraight2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Fives</div>
+                            <div class="formBox"><input type="text" name="" id="fives2"></div>
+                            <div class="formBox">Lg. Straight</div>
+                            <div class="formBox"><input type="text" name="" id="lgStraight2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Sixes</div>
+                            <div class="formBox"><input type="text" name="" id="sixes2"></div>
+                            <div class="formBox">Yahtzee</div>
+                            <div class="formBox"><input type="text" name="" id="yahtzee2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Upper Sub Total</div>
+                            <div class="formBox">
+                                <div class="outBox" id="subTotal2"></div>
+                            </div>
+                            <div class="formBox">Chance</div>
+                            <div class="formBox"><input type="text" name="" id="chance2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Bonus</div>
+                            <div class="formBox">
+                                <div class="outBox" id="bonus2"></div>
+                            </div>
+                            <div class="formBox">Bonus Yahtzee</div>
+                            <div class="formBox"><input type="text" name="" id="bonusYZ2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="formBox">Upper Total</div>
+                            <div class="formBox">
+                                <div class="outBox" id="upperTotal2"></div>
+                            </div>
+                            <div class="formBox">Lower Toal</div>
+                            <div class="formBox">
+                                <div class="outBox" id="lowerTotal2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btnTotalRow">
+                    <button id="totalBtn1" class="btnTotal" onclick="Total()">1st Player Score</button>
+                    <button id="totalBtn2" class="btnTotal rightPush" onclick="Total2()">2nd Player Score</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/change.js"></script>
+</body>
+
+</html>

@@ -3,12 +3,15 @@ $("#box1").click(function() {
     $("#box1").slideUp("slow");
     setTimeout(function(){
         window.location.href = "ToDoList/todo.html";
-    }, 500);
+    }, 600);
 });
 
 $("#box2").click(function() {
     console.log("clicked");
     $("#box2").slideUp("slow");
+    setTimeout(function(){
+        window.location.href = "Yahtzee-v2/change.html"
+    }, 600);
 });
 
 $("#box3").click(function() {

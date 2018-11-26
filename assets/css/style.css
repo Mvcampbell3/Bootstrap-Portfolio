@@ -4,6 +4,7 @@ body{
     /* background-color: lightgray; */
     /* background-image: url(../images/footer_lodyas.png); */
     background-image: url(../images/old_moon/old_moon.png);
+    height: 100vh;
 }
 
 .wrapper{
@@ -57,7 +58,6 @@ h1, h2, h3, h4, h5, h6, ul, p{
 }
 
 
-
 .space{
     margin: 1em 0;
 }
@@ -83,8 +83,16 @@ h1, h2, h3, h4, h5, h6, ul, p{
 
 #footer{
     height: 56px;
+    position: relative;
 }
 
+.top-line{
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #4aaaa5;
+}
 
 .inside{
     padding: 10px;
@@ -144,7 +152,7 @@ img{
 }
 
 #box2{
-    background-image: url("../images/portPics/retroGame.jpeg");
+    background-image: url("../images/portPics/yahtzee.jpg");
 }
 
 #box3{
@@ -156,13 +164,13 @@ img{
 }
 
 #box5{
-    background-image: url("../images/portPics/yahtzee.jpg");
+    background-image: url("../images/portPics/retroGame.jpeg");
 }
 
 /* Media Queries */
 
 @media (max-width: 768px) {
     #name{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
