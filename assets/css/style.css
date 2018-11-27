@@ -1,8 +1,8 @@
+
 body{
     overflow-x: hidden;
     box-sizing: border-box;
     background-image: url(../images/old_moon/old_moon.png);
-    height: 100vh;
 }
 
 .wrapper{
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
 .navbar-custom{
     background-color: #fff;
 }
+
 
 .list-style{
     list-style: none;
@@ -97,7 +98,6 @@ h1, h2, h3, h4, h5, h6, ul, p{
 .border4{
     border: 1px black solid;
     box-shadow: 7px 7px 10px black;
-
 }
 
 .answer{
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
 }
 
 #footer{
-    height: 56px;
+    /* height: 56px; */
     position: relative;
 }
 
@@ -172,22 +172,91 @@ img{
 
 #box1{
     background-image: url("../images/portPics/boardGame.jpeg");
+    opacity: 0;
+    animation-name: easeIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
 }
 
 #box2{
     background-image: url("../images/portPics/yahtzee.jpg");
+    opacity: 0;
+    animation-name: easeIn;
+    animation-duration: 3.0s;
+    animation-fill-mode: forwards;
 }
 
 #box3{
     background-image: url("../images/portPics/keyboard.jpeg");
+    opacity: 0;
+    animation-name: easeIn;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
 }
 
 #box4{
     background-image: url("../images/portPics/math.jpeg");
+    opacity: 0;
+    animation-name: easeIn;
+    animation-duration: 4.0s;
+    animation-fill-mode: forwards;
 }
 
 #box5{
     background-image: url("../images/portPics/retroGame.jpeg");
+    opacity: 0;
+    animation-name: easeIn;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+/* -----------Animations------------ */
+
+#animate{
+    position: relative;
+    animation-name: toLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toLeft{
+    0%{right: -900px;}
+    100%{right: 0px;}
+}
+
+#headNav{
+    position: relative;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop{
+    0%{top: -100px;}
+    100%{top: 0px;}
+}
+
+#footer{
+    animation-name: toRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toRight{
+    0%{left: -750px;}
+    100%{left: 0px;}
+}
+
+.easeIn{
+    opacity: 0;
+    animation-name: easeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes easeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 /* Media Queries */
@@ -212,3 +281,4 @@ img{
         font-size: 30px;
     }
 }
+
