@@ -1,8 +1,6 @@
 body{
     overflow-x: hidden;
     box-sizing: border-box;
-    /* background-color: lightgray; */
-    /* background-image: url(../images/footer_lodyas.png); */
     background-image: url(../images/old_moon/old_moon.png);
     height: 100vh;
 }
@@ -10,7 +8,6 @@ body{
 .wrapper{
     height: calc(100vh - 56px);
 }
-
 
 h1, h2, h3, h4, h5, h6, ul, p{
     padding: 0;
@@ -40,9 +37,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
 }
 
 #name{
-    /* font-family: 'Merriweather', serif; */
     font-family: 'Rubik', sans-serif;
-    /* color: white; */
     color: white;
     font-size: 36px;
 }
@@ -57,6 +52,34 @@ h1, h2, h3, h4, h5, h6, ul, p{
     padding: 0;
 }
 
+.myNavLi{
+    background-color: #4aaaa5;
+}
+
+.myNavA{
+    color: white;
+    padding: 2px 4px;
+}
+
+.myNavA:hover{
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.middleNavLi{
+    margin: 0 8px;
+}
+
+.activeMy{
+    background-color: #F8F9FA;
+    color: #555;
+}
+
+.activeMy:hover{
+    background-color: #F8F9FA;
+    color: #555;
+}
 
 .space{
     margin: 1em 0;
@@ -168,6 +191,21 @@ img{
 }
 
 /* Media Queries */
+
+@media (max-width: 993px) {
+    .myNavLi{
+        border: none;
+        background-color: #fff;
+    }
+
+    .myNavA{
+        color: #333;
+    }
+
+    .middleNavLi{
+        margin: 0;
+    }
+}
 
 @media (max-width: 768px) {
     #name{

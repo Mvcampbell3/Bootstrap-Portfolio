@@ -5,12 +5,8 @@
 }
 
 body{
-    background-color: #aaa;
+    background-color: #fff;
     box-sizing: border-box;
-}
-
-.mainBody{
-    margin-top: 2em;
 }
 
 table, th, tr, td{
@@ -40,7 +36,6 @@ header h1{
     border: 3px darkred solid;
     width: 500px;
     height: auto;
-    /* margin: 0 auto; */
     padding: 10px;
     background-color: grey;
 }
@@ -323,11 +318,30 @@ ul{
 .rules-open{
     width: fit-content;
     background-color: deepskyblue;
-    margin: 1em auto;
+    margin: 10px auto;
     border: 3px darkred solid;
     font-size: 20px;
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     text-align: center;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.popTitle{
+    text-align: center;
+}
+
+.disclaimer{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.rules{
+    margin-top: 5px;
+    line-height: 1.1;
+}
+
+.rules a{
+    color: black;
+    background-color: white;
 }
