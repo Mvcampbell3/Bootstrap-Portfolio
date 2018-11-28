@@ -9,9 +9,6 @@ $("#box1").click(function() {
 $("#box2").click(function() {
     console.log("clicked");
     $("#box2").slideUp("slow");
-    setTimeout(function(){
-        window.location.href = "Yahtzee-v2/change.html"
-    }, 600);
 });
 
 $("#box3").click(function() {

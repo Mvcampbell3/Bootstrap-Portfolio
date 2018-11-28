@@ -167,11 +167,22 @@ img{
     padding: 5px 0;
 }
 
+.portTitleReal{
+    position: absolute;
+    background-color: deepskyblue;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
 
 /* Portfolio Page */
 
 #box1{
     background-image: url("../images/portPics/boardGame.jpeg");
+    box-shadow: 7px 7px 10px deepskyblue;
+    cursor: pointer;
     opacity: 0;
     animation-name: easeIn;
     animation-duration: 2.5s;
@@ -236,7 +247,13 @@ img{
     100%{top: 0px;}
 }
 
-#footer{
+.footLeft{
+    animation-name: toLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.footRight{
     animation-name: toRight;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -246,6 +263,7 @@ img{
     0%{left: -750px;}
     100%{left: 0px;}
 }
+
 
 .easeIn{
     opacity: 0;
