@@ -9,11 +9,17 @@ $("#box1").click(function() {
 $("#box2").click(function() {
     console.log("clicked");
     $("#box2").slideUp("slow");
+    setTimeout(function(){
+        window.location.href = "TriviaGame/index.html";
+    }, 600);
 });
 
 $("#box3").click(function() {
     console.log("clicked");
     $("#box3").slideUp("slow");
+    setTimeout(function(){
+        window.location.href = "unit-4-game/index.html";
+    }, 600);
 });
 
 $("#box4").click(function() {

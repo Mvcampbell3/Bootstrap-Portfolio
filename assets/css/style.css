@@ -180,7 +180,7 @@ img{
 /* Portfolio Page */
 
 #box1{
-    background-image: url("../images/portPics/boardGame.jpeg");
+    background-image: url("../images/portPics/todoList.jpeg");
     box-shadow: 7px 7px 10px deepskyblue;
     cursor: pointer;
     opacity: 0;
@@ -190,17 +190,19 @@ img{
 }
 
 #box2{
-    background-image: url("../images/portPics/yahtzee.jpg");
+    background-image: url("../images/portPics/trivia.png");
     opacity: 0;
+    box-shadow: 7px 7px 10px deepskyblue;
     animation-name: easeIn;
     animation-duration: 3.0s;
     animation-fill-mode: forwards;
 }
 
 #box3{
-    background-image: url("../images/portPics/keyboard.jpeg");
+    background-image: url("../images/portPics/sf2.jpg");
     opacity: 0;
     animation-name: easeIn;
+    box-shadow: 7px 7px 10px deepskyblue;
     animation-duration: 3.5s;
     animation-fill-mode: forwards;
 }
