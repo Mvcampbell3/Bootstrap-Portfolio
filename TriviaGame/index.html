@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/shuttleEarth.png" type="image/x-icon">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="mainTitle changeTitle">Trivia Game</h1>
+    </header>
+
+    <div class="gameBox">
+        <div class="topSection">
+            <div class="flex">
+                <h3 class="qnumPlace">Question <span class="questionNumber">1</span></h3>
+                <h3 class="timePlace">Time Left: <span class="timer">30</span> Seconds</h3> 
+            </div>
+        </div>
+        <div class="questionArea">
+            <div class="question">What is the meaning of life?</div>
+        </div>
+        <div class="answerButtons hidden">
+            <div class="answerArea">
+                    <h4 id="button1" class="answer">Answer1</h4>
+                    <h4 id="button2" class="answer">Answer2</h4>
+                    <h4 id="button3" class="answer">Answer3</h4>
+                    <h4 id="button4" class="answer">Answer42</h4>
+            </div>
+        </div>
+        <div class="startGamePlace">
+            <div id="presArray" value="pres" class="btn hide">U.S. Presidents</div>
+            <div id="ISSArray" value="iss" class="btn hide">International Space Station</div>
+        </div>
+        <div id="restart" class="restart">Restart</div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
