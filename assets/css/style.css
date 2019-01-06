@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
     width: 175px;
     margin: 0 auto;
     background-color: black;
+    cursor: pointer;
 }
 
 img{
@@ -175,6 +176,7 @@ img{
     text-align: center;
     color: white;
     padding: 5px 0;
+    cursor: pointer;
 }
 
 /* Portfolio Page */
@@ -211,6 +213,7 @@ img{
     background-image: url("../images/portPics/math.jpeg");
     opacity: 0;
     animation-name: easeIn;
+    box-shadow: 7px 7px 10px deepskyblue;
     animation-duration: 4.0s;
     animation-fill-mode: forwards;
 }

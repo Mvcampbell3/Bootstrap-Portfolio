@@ -25,6 +25,9 @@ $("#box3").click(function() {
 $("#box4").click(function() {
     console.log("clicked");
     $("#box4").slideUp("slow");
+    setTimeout(function(){
+        window.location.href = "https://mvcampbell3.github.io/giphyHW/";
+    }, 600);
 });
 
 $("#box5").click(function() {

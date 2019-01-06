@@ -7,7 +7,6 @@ function checkValue(){
     if (name != "" && detail !=""){
         addTask()
     } else {
-        console.log('\"put something in\" - she');
         alert("Must have vaules in both fields")
     }
 }
