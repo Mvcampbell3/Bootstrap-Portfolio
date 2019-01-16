@@ -194,6 +194,7 @@ img{
 #box2{
     background-image: url("../images/portPics/trivia.png");
     opacity: 0;
+    background-size: cover;
     box-shadow: 7px 7px 10px deepskyblue;
     animation-name: easeIn;
     animation-duration: 3.0s;
@@ -219,9 +220,11 @@ img{
 }
 
 #box5{
-    background-image: url("../images/portPics/retroGame.jpeg");
+    background-image: url("../images/portPics/rps.jpg");
+    background-size: cover;
     opacity: 0;
     animation-name: easeIn;
+    box-shadow: 7px 7px 10px deepskyblue;
     animation-duration: 4.5s;
     animation-fill-mode: forwards;
 }

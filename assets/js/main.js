@@ -33,6 +33,9 @@ $("#box4").click(function() {
 $("#box5").click(function() {
     console.log("clicked");
     $("#box5").slideUp("slow");
+    setTimeout(function(){
+        window.location.href = "https://mvcampbell3.github.io/RPS-Multiplayer/";
+    }, 600);
 });
 
 
